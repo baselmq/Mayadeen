@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
 
     <link
       rel="stylesheet"
@@ -13,14 +13,43 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
     />
-    <link rel="stylesheet" href="../css/index.css" />
-    <title>تغيير كلمة السر</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>حساب جديد</title>
   </head>
   <body dir="rtl" class="auth">
     <div class="container-auth center-flex">
-      <h1 class="new-pass-title">تغيير كلمة السر</h1>
+      <h1 class="register-title">حساب جديد</h1>
       <!-- -----------------*** form ***-----------------*** -->
-      <form action="" class="form-auth center-flex" id="form-new-pass">
+      <form action="" class="form-auth center-flex" id="form-register">
+        <!-- ---------------*** full name ***---------------*** -->
+        <div class="field fullName-field">
+          <label for="fullName">الإسم:</label>
+          <div class="input-container">
+            <i class="fa-solid fa-user auth-icon"></i>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="ادخل الاسم الاول والاخير"
+            />
+          </div>
+          <span class="error fullName-error">يرجى ادخال الاسم</span>
+        </div>
+        <!-- ---------------*** email ***---------------*** -->
+        <div class="field email-field">
+          <label for="email"> الايميل:</label>
+          <div class="input-container">
+            <i class="fa-solid fa-envelope auth-icon"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@exapmle.com"
+            />
+          </div>
+          <span class="error email-error">يرجى ادخال ايميل صحيح</span>
+        </div>
         <!-- --------------*** password ***--------------*** -->
         <div class="field pass-field">
           <label for="password">كلمة السر:</label>
@@ -55,13 +84,16 @@
             ></i>
           </div>
           <span class="error confirm-pass-error"
-            >يرجى ادخال كلمة السر مرة اخرى</span
+            >يرجى ادخال تاكيد كلمة السر</span
           >
         </div>
         <!-- --------------*** button ***--------------*** -->
-        <button class="btn-auth btn-new-pass">اعادة تعيين</button>
+        <button class="btn-auth btn-register">تسجيل جديد</button>
       </form>
+      <div class="new-auth">
+        لديك حساب؟ <a href="login.html" class="new-auth-link">تسجيل الدخول </a>
+      </div>
     </div>
-    <script src="../js/new_pass.js"></script>
+    <script src="js/auth_register.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
 
     <link
       rel="stylesheet"
@@ -17,8 +17,9 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
     />
-    <link rel="stylesheet" href="../css/index.css" />
-    <title>النهاية</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>مرحلة الفكرة</title>
   </head>
   <body dir="rtl" class="progress-bar">
     <div class="container-steps">
@@ -26,16 +27,16 @@
         <!--step -->
         <!--step is-active -->
         <!--step is-complete -->
-        <li class="step is-complete" data-step="1"></li>
-        <li class="step is-complete" data-step="2"></li>
-        <li class="step is-complete" data-step="3"></li>
-        <li class="step is-complete" data-step="4"></li>
-        <li class="step is-active" data-step="5"></li>
+        <li class="step is-active" data-step="1"></li>
+        <li class="step" data-step="2"></li>
+        <li class="step" data-step="3"></li>
+        <li class="step" data-step="4"></li>
+        <li class="step" data-step="5"></li>
       </ol>
       <!-- -------------------contact------------------- -->
 
       <div class="contact-steps">
-        <h1 class="title-step">النهاية</h1>
+        <h1 class="title-step">مرحلة الفكرة</h1>
         <div class="bg-gray">
           <!-- -------------------question------------------- -->
           <h3 class="question">قم ببناء نموذج العمل</h3>
@@ -69,6 +70,7 @@
             <i class="fi fi-br-file-upload icon-upload"></i>
             <div class="text-upload">اضغط لإرفاق ملف</div>
           </div>
+          <div id="selected-file" style="display: none"></div>
         </div>
         <div class="container-recourses">
           <h3>مصادر أخرى لتساعدك في بناء نموذج العمل</h3>
@@ -92,27 +94,27 @@
           </div>
         </div>
         <div>
-          <a class="btn-next">
+          <a class="btn-next" href="step_two.html">
             <span>التالي</span><i class="fa-solid fa-arrow-left"></i>
           </a>
         </div>
         <!-- -------------------bottom progress bar------------------- -->
         <div class="bottom-progress-bar">
           <div class="circle-step-bar active-circle-step">
-            <img src="../assets/icons/roadmap-1.svg" alt="roadmap-1" />
+            <img src="assets/icons/roadmap-1.svg" alt="roadmap-1" />
           </div>
-          <div class="circle-step-bar active-circle-step">
-            <img src="../assets/icons/roadmap-2.svg" alt="roadmap-2" />
+          <div class="circle-step-bar">
+            <img src="assets/icons/roadmap-2.svg" alt="roadmap-2" />
           </div>
-          <div class="circle-step-bar active-circle-step">
-            <img src="../assets/icons/roadmap-3.svg" alt="roadmap-3" />
+          <div class="circle-step-bar">
+            <img src="assets/icons/roadmap-3.svg" alt="roadmap-3" />
           </div>
-          <div class="circle-step-bar active-circle-step">
-            <img src="../assets/icons/roadmap-4.svg" alt=" roadmap-4" />
+          <div class="circle-step-bar">
+            <img src="assets/icons/roadmap-4.svg" alt=" roadmap-4" />
           </div>
-          <div class="circle-step-bar active-circle-step">
+          <div class="circle-step-bar">
             <img
-              src="../assets/icons/roadmap-5.svg"
+              src="assets/icons/roadmap-5.svg"
               alt="roadmap-5"
               id="roadmap-5"
             />
@@ -120,5 +122,6 @@
         </div>
       </div>
     </div>
+    <script src="js/upload_file.js"></script>
   </body>
 </html>
