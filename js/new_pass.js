@@ -42,7 +42,7 @@ formNewPassword.addEventListener("submit", (e) => {
   if (allFieldsValid) {
     console.log("rest");
     // Perform the registration logic or redirect to another page
-    window.location.href = "../index.html";
+    window.location.href = "login.html";
   }
 });
 

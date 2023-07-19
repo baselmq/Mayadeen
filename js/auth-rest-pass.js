@@ -20,7 +20,7 @@ formRestPassword.addEventListener("submit", (e) => {
   email.addEventListener("keyup", checkEmail);
 
   if (!emailField.classList.contains("invalid")) {
-    window.location.href = "../otp.html";
+    window.location.href = "otp.html";
     console.log("rest");
   }
 });
