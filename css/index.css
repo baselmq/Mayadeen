@@ -21,6 +21,8 @@
   --gray-border: #f0eff2;
   --white: #fff;
   --red: #d93025;
+  --grey-background: #f8f8f8;
+  --grey: #7d7d7d;
 
   /* progress bar */
   --complete: #2e938e;
@@ -261,11 +263,70 @@ li:hover ul.submenu {
   background-color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
-
+@media (max-width: 768px) {
+  .nab-bar {
+    padding: 20px;
+  }
+}
 /* ------------------main------------------ */
 
 .main {
   padding: 0 100px;
+  margin-bottom: 40px;
+}
+.profile {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+.user-info {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-image {
+  width: 220px;
+}
+.email-user {
+  color: var(--grey);
+}
+@media (max-width: 768px) {
+  .profile {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .user-info {
+    gap: 10px;
+  }
+
+  .user-image {
+    width: 120px;
+  }
+  .user-name {
+    font-size: 16px;
+  }
+  .email-user {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .user-info {
+    gap: 15px;
+  }
+  .user-image {
+    width: 180px;
+  }
+  .user-name {
+    font-size: 18px;
+  }
+  .email-user {
+    font-size: 16px;
+  }
 }
 .roadmap-home {
   margin-top: 30px;
@@ -411,7 +472,7 @@ li:hover ul.submenu {
 }
 .roadmap-shape-two {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
 }
 .roadmap-shape-two > a {
@@ -421,17 +482,19 @@ li:hover ul.submenu {
   flex-direction: column;
   max-width: 300px;
   gap: 10px;
-  height: 150px;
   border-radius: 2px;
+  padding: 15px;
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .roadmap-shape-two > a img {
   filter: grayscale();
+  cursor: not-allowed;
 }
 .roadmap-shape-two .active img {
   filter: none;
+  cursor: pointer;
 }
 .d-none {
   display: none;
@@ -443,13 +506,40 @@ li:hover ul.submenu {
   width: fit-content;
   cursor: pointer;
 }
+.circle-step-home {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 50%;
+  margin: 5px;
+  transition-duration: 0.4s;
+}
+.circle-step-home:hover {
+  transform: translate(0, -5px);
+  transition-duration: 0.4s;
+}
+#roadmap-5 {
+  width: 35px;
+}
+.active .pro-bar-card {
+  background-color: var(--green);
+}
+.pro-bar-card {
+  width: 95%;
+  height: 7px;
+  background-color: var(--gray-border);
+  border-radius: 20px;
+  margin: 10px 0;
+}
+/* otp */
 :where(.otp-container) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
 #form-otp .otp-container {
   flex-direction: row;
   column-gap: 10px;
@@ -494,7 +584,7 @@ li:hover ul.submenu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 100px 0;
+  padding: 30px 0 0;
 }
 .container-steps {
   width: 100%;
@@ -527,7 +617,7 @@ li:hover ul.submenu {
   display: block;
   margin: 0 auto;
   background: var(--white);
-  border: 2px solid var(--mute);
+  border: 3px solid var(--mute);
   color: var(--mute);
   width: 2rem;
   height: 2rem;
@@ -547,7 +637,7 @@ li:hover ul.submenu {
   display: block;
   background: var(--mute);
   width: 100%;
-  height: 0.125rem;
+  height: 0.18rem;
   top: 1rem;
   right: 50%;
 }
@@ -608,13 +698,13 @@ h1 {
 }
 .btn-radio {
   margin: 20px 0;
-  background-color: #f8f8f8;
+  background-color: var(--grey-background);
   padding: 50px 0;
 }
 .bg-gray {
   margin: 20px 0;
-  background-color: #f8f8f8;
-  padding: 50px 0;
+  background-color: var(--grey-background);
+  padding: 50px 20px;
 }
 .form-questions {
   display: flex;
@@ -768,7 +858,8 @@ input[type="radio"]:checked + .option {
 }
 @media (max-width: 992px) {
   .progress-bar {
-    padding: 0 50px;
+    /* padding: 0 50px; */
+    /* padding: 30px 0 0; */
   }
   .container-steps {
     width: 100%;
@@ -783,7 +874,6 @@ input[type="radio"]:checked + .option {
 
 @media (max-width: 767px) {
   .progress-bar {
-    padding: 0;
   }
   .container-steps {
     width: 100%;
@@ -791,7 +881,7 @@ input[type="radio"]:checked + .option {
   }
   .contact-steps {
     margin: 20px;
-    padding: 30px;
+    padding: 20px;
   }
   .bottom-progress-bar {
     margin-left: 20px;
