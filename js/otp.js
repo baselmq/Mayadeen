@@ -64,7 +64,7 @@ formOtp.addEventListener("submit", function (e) {
   if (enteredOTP === expectedOTP) {
     // OTP is correct, navigate to the main page
     otpField.classList.remove("invalid");
-    window.location.href = "../pages/new_pass.html";
+    window.location.href = "../new_pass.html";
   } else {
     // OTP is incorrect, display an error message
     otpField.classList.add("invalid");

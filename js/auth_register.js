@@ -62,7 +62,7 @@ formRegister.addEventListener("submit", (e) => {
     !confirmPassField.classList.contains("invalid");
 
   if (allFieldsValid) {
-    window.location.href = "../pages/home.html";
+    window.location.href = "../index.html";
     console.log("register");
     // Perform the registration logic or redirect to another page
     // window.location.href = "../pages/report.html";

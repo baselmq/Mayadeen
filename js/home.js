@@ -7,10 +7,10 @@ switchShape.addEventListener("click", function () {
   if (sectionShapeOne.classList.contains("d-none")) {
     sectionShapeOne.classList.toggle("d-none");
     sectionShapeTwo.classList.toggle("d-none");
-    gridIcon.setAttribute("src", "../assets/icons/grid2.svg");
+    gridIcon.setAttribute("src", "assets/icons/grid2.svg");
   } else {
     sectionShapeTwo.classList.toggle("d-none");
     sectionShapeOne.classList.toggle("d-none");
-    gridIcon.setAttribute("src", "../assets/icons/grid.svg");
+    gridIcon.setAttribute("src", "assets/icons/grid.svg");
   }
 });

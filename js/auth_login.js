@@ -35,7 +35,7 @@ formLogin.addEventListener("submit", (e) => {
     !emailField.classList.contains("invalid") &&
     !passField.classList.contains("invalid")
   ) {
-    window.location.href = "../pages/home.html";
+    window.location.href = "../index.html";
     console.log("login");
   }
 });
