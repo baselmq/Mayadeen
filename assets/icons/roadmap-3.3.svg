@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='42.181' height='55.435' viewBox='0 0 42.181 55.435'>
+    <path id='marker'
+        d='M17.945,52.257C2.809,30.316,0,28.064,0,20a20,20,0,1,1,40,0c0,8.064-2.809,10.316-17.945,32.257A2.5,2.5,0,0,1,17.945,52.257Z'
+        transform='translate(1 2.101)' fill='#2e938e' />
+    <g id='Preparation' transform='translate(-3910 -5754)'>
+        <g id='Group_555' data-name='Group 555' transform='translate(3910 5754.356)'>
+            <g id='Group_505' data-name='Group 505' transform='translate(0 0)'>
+                <g id='Ellipse_69' data-name='Ellipse 69' transform='translate(0 -0.356)' fill='#fff' stroke='#ceb817'
+                    stroke-width='3'>
+                    <ellipse cx='21.09' cy='21.091' rx='21.09' ry='21.091' stroke='none' />
+                    <ellipse cx='21.09' cy='21.091' rx='19.59' ry='19.591' fill='none' />
+                </g>
+            </g>
+            <path id='print'
+                d='M17.483,7.493V3.015a1.249,1.249,0,0,0-.366-.883L15.351.366A1.249,1.249,0,0,0,14.468,0H3.746A1.249,1.249,0,0,0,2.5,1.249V7.493A2.5,2.5,0,0,0,0,9.99v4.371a.624.624,0,0,0,.624.624H2.5v3.746A1.249,1.249,0,0,0,3.746,19.98H16.234a1.249,1.249,0,0,0,1.249-1.249V14.985h1.873a.624.624,0,0,0,.624-.624V9.99A2.5,2.5,0,0,0,17.483,7.493Zm-2.5,9.99H5V13.737h9.99Zm0-8.741H5V2.5h7.493V4.371A.624.624,0,0,0,13.112,5h1.873Zm1.873,2.81a.937.937,0,1,1,.937-.937A.937.937,0,0,1,16.859,11.551Z'
+                transform='translate(11 10.644)' fill='#2e938e' />
+        </g>
+    </g>
+</svg>

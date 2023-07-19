@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>مرحلة تجارب الفكرة</title>
+  </head>
+  <body dir="rtl" class="progress-bar">
+    <div class="container-steps">
+      <ol class="steps">
+        <!--step -->
+        <!--step is-active -->
+        <!--step is-complete -->
+        <li class="step is-complete" data-step="1"></li>
+        <li class="step step is-active" data-step="2"></li>
+        <li class="step" data-step="3"></li>
+        <li class="step" data-step="4"></li>
+        <li class="step" data-step="5"></li>
+      </ol>
+      <!-- -------------------contact------------------- -->
+
+      <div class="contact-steps">
+        <h1 class="title-step">مرحلة تجارب الفكرة</h1>
+
+        <div class="bg-gray">
+          <!-- -------------------question------------------- -->
+          <h3 class="question">قم ببناء نموذج العمل</h3>
+          <form class="form-questions">
+            <div class="answers">
+              <input
+                type="radio"
+                id="answer-one"
+                name="btn-radio"
+                value="نعم"
+              />
+              <label for="answer-one" class="option">نعم</label>
+            </div>
+            <div class="answers">
+              <input
+                type="radio"
+                id="answer-two"
+                name="btn-radio"
+                value="ليس بعد"
+              />
+              <label for="answer-two" class="option">ليس بعد</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="bg-gray">
+          <h3 class="question">أرفق نموذج العمل</h3>
+
+          <!-- -------------------upload file------------------- -->
+          <div class="upload-file">
+            <i class="fi fi-br-file-upload icon-upload"></i>
+            <div class="text-upload">اضغط لإرفاق ملف</div>
+          </div>
+        </div>
+        <div class="container-recourses">
+          <h3>مصادر أخرى لتساعدك في بناء نموذج العمل</h3>
+          <div class="recourses">
+            <div>
+              <i class="fi fi-sr-info icon-info"></i>
+              <span>دراسة المنافسة</span>
+            </div>
+            <div>
+              <i class="fi fi-sr-info icon-info"></i>
+              <span>دراسة المنافسة</span>
+            </div>
+            <div>
+              <i class="fi fi-sr-info icon-info"></i>
+              <span>دراسة المنافسة</span>
+            </div>
+            <div>
+              <i class="fi fi-sr-info icon-info"></i>
+              <span>دراسة المنافسة</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="btn-next" href="step_three.html">
+            <span>التالي</span><i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <!-- -------------------bottom progress bar------------------- -->
+        <div class="bottom-progress-bar">
+          <div class="circle-step-bar active-circle-step">
+            <img src="../assets/icons/roadmap-1.svg" alt="roadmap-1" />
+          </div>
+          <div class="circle-step-bar active-circle-step">
+            <img src="../assets/icons/roadmap-2.svg" alt="roadmap-2" />
+          </div>
+          <div class="circle-step-bar">
+            <img src="../assets/icons/roadmap-3.svg" alt="roadmap-3" />
+          </div>
+          <div class="circle-step-bar">
+            <img src="../assets/icons/roadmap-4.svg" alt=" roadmap-4" />
+          </div>
+          <div class="circle-step-bar">
+            <img
+              src="../assets/icons/roadmap-5.svg"
+              alt="roadmap-5"
+              id="roadmap-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='42.181' height='55.416' viewBox='0 0 42.181 55.416'>
+    <path id='marker'
+        d='M17.945,52.257C2.809,30.316,0,28.064,0,20a20,20,0,1,1,40,0c0,8.064-2.809,10.316-17.945,32.257A2.5,2.5,0,0,1,17.945,52.257Z'
+        transform='translate(1 2.083)' fill='#2e938e' />
+    <g id='exp' transform='translate(-3999 -5754.019)'>
+        <g id='Group_556' data-name='Group 556' transform='translate(3999 5754.019)'>
+            <g id='Group_495' data-name='Group 495' transform='translate(0)'>
+                <g id='Ellipse_69' data-name='Ellipse 69' fill='#fff' stroke='#ceb817' stroke-width='3'>
+                    <ellipse cx='21.09' cy='21.091' rx='21.09' ry='21.091' stroke='none' />
+                    <ellipse cx='21.09' cy='21.091' rx='19.59' ry='19.591' fill='none' />
+                </g>
+            </g>
+            <g id='Group_508' data-name='Group 508' transform='translate(15 6.66)'>
+                <rect id='Rectangle_157' data-name='Rectangle 157' width='1.48' height='4.44' rx='0.74'
+                    transform='translate(2.22 2.22)' fill='#2e938e' />
+                <rect id='Rectangle_156' data-name='Rectangle 156' width='1.48' height='2.96' rx='0.74'
+                    transform='translate(5.18)' fill='#2e938e' />
+                <rect id='Rectangle_155' data-name='Rectangle 155' width='1.48' height='2.96' rx='0.74'
+                    transform='translate(7.4 2.96)' fill='#2e938e' />
+                <path id='Union_1' data-name='Union 1'
+                    d='M1.667,16.423V3.588H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H10.84a1,1,0,0,1,1,1V2.588a1,1,0,0,1-1,1h-.579V16.423a4.3,4.3,0,1,1-8.595,0Z'
+                    transform='translate(0 8.14)' fill='#2e938e' />
+                <rect id='Rectangle_154' data-name='Rectangle 154' width='4.44' height='5.92' rx='1'
+                    transform='translate(3.7 11.84)' fill='#fff' />
+            </g>
+        </g>
+    </g>
+</svg>

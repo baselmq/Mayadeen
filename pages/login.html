@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>تسجيل الدخول</title>
+  </head>
+  <body dir="rtl" class="auth">
+    <div class="container-auth center-flex">
+      <h1 class="login-title">تسجيل الدخول</h1>
+      <!-- -----------------*** form ***-----------------*** -->
+      <form action="" class="form-auth center-flex" id="form-login">
+        <!-- ---------------*** email ***---------------*** -->
+        <div class="field email-field">
+          <label for="email"> الايميل:</label>
+          <div class="input-container">
+            <i class="fa-solid fa-envelope auth-icon"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@exapmle.com"
+            />
+          </div>
+          <span class="error email-error">يرجى ادخال ايميل صحيح</span>
+        </div>
+        <!-- --------------*** password ***--------------*** -->
+        <div class="field pass-field">
+          <label for="password">كلمة السر:</label>
+          <div class="input-container">
+            <i class="fa-solid fa-lock auth-icon"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+            />
+            <i class="fi fi-sr-eye-crossed eye-icon" id="eyeIcon"></i>
+          </div>
+          <span class="error pass-error">يرجى ادخال كلمة السر</span>
+        </div>
+        <!-- --------------*** forget password ***--------------*** -->
+        <a href="rest_password.html" class="forget-pass">نسيت كلمة السر؟</a>
+        <!-- --------------*** button ***--------------*** -->
+        <button class="btn-auth btn-login">تسجيل الدخول</button>
+      </form>
+      <div class="new-auth">
+        ليس لديك حساب؟
+        <a href="register.html" class="new-auth-link">تسجيل جديد </a>
+      </div>
+    </div>
+    <script src="../js/auth_login.js"></script>
+  </body>
+</html>
