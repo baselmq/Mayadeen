@@ -21,6 +21,7 @@
   --red: #d93025;
   --grey-background: #f8f8f8;
   --grey: #7d7d7d;
+  --jumbotron: #2a827e50;
 
   /* progress bar */
   --complete: #2e938e;
@@ -272,12 +273,93 @@ li:hover ul.submenu {
   padding: 0 100px;
   margin-bottom: 40px;
 }
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  padding: 0 100px;
+  background-color: var(--jumbotron);
+}
+.jumbotron-left img {
+  width: 300px;
+}
+.jumbotron-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.jumbotron-right h1 {
+  margin: 0;
+  color: var(--green);
+  font-size: 40px;
+}
+.jumbotron-right h2 {
+  margin: 0;
+  color: var(--yellow);
+}
+.jumbotron-right p {
+  margin: 0;
+  color: var(--black);
+  max-width: 600px;
+  width: 100%;
+}
+.section-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.jumbotron-right .btn-account {
+  background-color: var(--green);
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition-duration: 0.3s;
+}
+.jumbotron-right .btn-account:hover {
+  background-color: var(--dark-green);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
 .profile {
   margin-top: 30px;
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 30px;
+}
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  position: relative;
+}
+.profile-left .interaction {
+  font-size: 18px;
+  color: var(--green);
+}
+.profile-left .board-note {
+  font-size: 14px;
+  color: var(--grey);
+  margin-right: 20px;
+}
+.board-note.is-up::after {
+  border-color: transparent transparent var(--green) transparent;
+  border-width: 0 7px 11px 7px;
+}
+
+.board-note::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 42px;
+  right: 0;
+  border-style: solid;
 }
 .user-info {
   display: flex;
@@ -289,8 +371,24 @@ li:hover ul.submenu {
 .user-image {
   width: 220px;
 }
-.email-user {
+.user-points {
   color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+.user-points img {
+  width: 25px;
+  height: 25px;
+}
+.levels {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 14px;
 }
 @media (max-width: 768px) {
   .profile {
@@ -309,8 +407,29 @@ li:hover ul.submenu {
   .user-name {
     font-size: 16px;
   }
-  .email-user {
+  .user-points {
     font-size: 14px;
+  }
+  .section-profile {
+    display: block;
+  }
+  .profile-left {
+    display: none;
+  }
+  .user-points img {
+    width: 20px;
+    height: 20px;
+  }
+  .jumbotron {
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .jumbotron-right {
+    align-items: center;
+    gap: 15px;
+  }
+  .jumbotron-left {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -323,8 +442,28 @@ li:hover ul.submenu {
   .user-name {
     font-size: 18px;
   }
-  .email-user {
+  .user-points {
     font-size: 16px;
+  }
+  .profile-left .interaction {
+    font-size: 16px;
+  }
+  .profile-left .board-note {
+    font-size: 13px;
+    margin-right: 16px;
+  }
+  .board-note::after {
+    top: 40px;
+  }
+  .user-points img {
+    width: 20px;
+    height: 20px;
+  }
+  .jumbotron {
+    justify-content: end;
+  }
+  .jumbotron-left {
+    display: none;
   }
 }
 .roadmap-home {
